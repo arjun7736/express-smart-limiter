@@ -10,7 +10,7 @@
 
 </div>
 
-> 🚀 A scalable, Redis-powered rate limiter middleware for Express, written in TypeScript.
+> 🚀 A scalable, Redis-powered rate limiter middleware for Express, written in TypeScript. (First Build)
 
 ---
 
@@ -29,7 +29,7 @@
 ## 📦 Installation
 
 ```bash
-npm install @arjunv/express-smart-limiter
+npm i express-smart-limiter
 ```
 ## 🧩 Usage & Configuration
 
