@@ -2,7 +2,7 @@
 
 # ⚡ express-smart-limiter
 
-[![npm version](https://img.shields.io/npm/v/@arjunv/express-smart-limiter?color=blue&logo=npm)](https://www.npmjs.com/package/@arjunv/express-smart-limiter)
+[![npm version](https://img.shields.io/npm/v/@arjunv/express-smart-limiter?color=blue&logo=npm)](https://www.npmjs.com/package/express-smart-limiter)
 [![build status](https://img.shields.io/github/actions/workflow/status/arjun7736/express-smart-limiter/test.yml?branch=main&label=tests&logo=github)](https://github.com/arjun7736/express-smart-limiter/actions)
 [![license](https://img.shields.io/npm/l/@arjunv/express-smart-limiter?color=brightgreen)](LICENSE)
 [![typescript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?logo=typescript)](https://www.typescriptlang.org/)
