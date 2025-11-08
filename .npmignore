@@ -1,16 +1,13 @@
 # Do not publish source or test files
-src/tests/
+src/
 coverage/
-lcov-report/
 node_modules/
 .vscode/
 .idea/
-jest.config.js
+jest.config.cjs
 tsconfig.json
-.eslintrc*
 .prettierrc*
-*.log
+.eslintrc*
 .gitignore
 package-lock.json
-
-# Only publish dist and docs
+*.log
