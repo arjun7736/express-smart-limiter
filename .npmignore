@@ -11,3 +11,5 @@ tsconfig.json
 .gitignore
 package-lock.json
 *.log
+jest.config.js
+jest.config.cjs

@@ -31,4 +31,4 @@ jest-coverage/
 # TypeScript build info
 *.tsbuildinfo
 
-express-smart-limiter-1.0.0.tgz
+express-smart-limiter-1.*.tgz
