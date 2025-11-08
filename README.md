@@ -40,7 +40,7 @@ The `rateLimiter()` middleware accepts a configuration object with the following
 | `windowMs` | `number` | ✅ | `60000` | Time window in milliseconds (e.g., 1 minute = 60000). |
 | `max` | `number` | ✅ | `60` | Maximum number of requests per `windowMs`. |
 | `redisUrl` | `string` | ✅ | `"redis://localhost:6379"` | Redis connection string used to track rate limits. |
-| `keyGenerator` | `(req: Request) => string` | ✅ | `req.ip` | Function to generate a unique key (e.g., user ID or IP). |
+| `keyGenerator` | `(req: Request) => string` | ❌ | `req.ip` | Function to generate a unique key (e.g., user ID or IP). |
 | `message` | `string` | ❌ | `"Too many requests, please try again later."` | Custom error message when the rate limit is exceeded. |
 | `onLimitReached` | `(key: string, count: number) => void` | ❌ | — | Optional callback executed when a client exceeds the rate limit. |
 

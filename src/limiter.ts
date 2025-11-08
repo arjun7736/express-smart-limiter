@@ -16,7 +16,16 @@ export function rateLimiter(options: RateLimiterOptions) {
 
   
   return async (req: Request, res: Response, next: NextFunction) => {
-    const key = `ratelimit:${keyGenerator(req)}`;
+    const clientKey =
+        typeof keyGenerator === "function"
+          ? keyGenerator(req)
+          : req.headers["x-forwarded-for"]?.toString().split(",")[0]?.trim() ||
+            req.socket.remoteAddress ||
+            req.ip ||
+            "unknown";
+
+      const key = `ratelimit:${clientKey}`;
+      
     const ttlSeconds = Math.ceil(windowMs / 1000);
 
     const currentCount = await redis.incr(key);
