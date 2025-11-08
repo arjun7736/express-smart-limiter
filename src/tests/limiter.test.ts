@@ -18,10 +18,6 @@ describe("Redis Rate Limiter Middleware", () => {
         windowMs: 60_000, 
         max: 2, 
         redisUrl: "redis://localhost:6379",
-        keyGenerator: (req: Request) => req.ip || "unknown",
-        onLimitReached: (key, count) => {
-          console.log(`Rate limit exceeded for ${key} (${count} requests)`);
-        },
       })
     );
 
