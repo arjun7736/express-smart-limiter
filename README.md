@@ -50,7 +50,7 @@ The `rateLimiter()` middleware accepts a configuration object with the following
 
 ```ts
 import express from "express";
-import { rateLimiter } from "@arjunv/express-smart-limiter";
+import { rateLimiter } from "express-smart-limiter";
 
 const app = express();
 
